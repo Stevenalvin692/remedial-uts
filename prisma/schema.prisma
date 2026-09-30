@@ -1,0 +1,14 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model pm_buku {
+  kode_buku Int    @id
+  judul     String
+  pengarang String
+  kategori  String
+}
